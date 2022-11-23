@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body
+{   
+    background: #f8f8f8;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px auto;
+}
+
+.mobile
+{
+    background: #fff;
+    width: 320px;
+    height: 650px;
+    border-radius: 30px;
+    box-shadow: 0 10px 15px rgba(0,0,0,0.4);
+    border: 10px solid #000;
+    position: relative;
+}
+
+.mobile .camera
+{
+    background: #000;
+    width: 150px;
+    height: 20px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin: auto;
+   border-bottom-right-radius: 10px;
+   border-bottom-left-radius: 10px;
+}   
+
+.mobile .camera::after
+{
+    content: '';
+    background-color: #fff;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    position: relative;
+    left: 0;
+    top: -4px;
+}
+
+.mobile .top-nav
+{
+    
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    top: -20px;
+}
+
+.mobile span,
+.mobile .top-nav ul li
+{
+    font-size: 10px;
+    font-weight: bold;
+}   
+
+.mobile .top-nav ul
+{
+    padding-left: 150px;
+}
+
+.mobile .top-nav ul li
+{
+    list-style: none;
+    display: inline-flex;
+}
+
+.mobile .heading 
+{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.mobile .heading h3
+{
+    margin-left: 60px;
+    font-size: 15px
+
+}
+
+.mobile .heading i.fa
+{
+    margin-left: 30px;
+    font-size: 15px;
+    background: #eceaea70;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+.mobile .clndr
+{
+    background: #eee6e6;
+    border-radius: 20px;
+    width: 260px;
+    height: 30px;
+    margin: 20px auto;
+    padding: 5px;
+}
+
+.mobile .clndr ul
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.mobile .clndr ul li
+{
+    list-style: none;
+    font-size: 12px;
+    color: #555;
+}
+
+/* .mobile .clndr ul li:nth-child(1)
+{
+    background-color:purple;
+    color: #fff;
+    width: 30px;
+}  */
+
+
+.mobile .container
+{
+    display: grid;
+    height: 400px;
+    align-content: center;
+    grid-template-columns: auto auto;
+    grid-gap: 15px;
+    background-color: #fff;
+    padding: 18px;
+}
+
+.mobile .container .items
+{
+    background-color: rgba(98, 142, 209, 0.8);
+    text-align: center;
+    padding: 30px 0;
+    font-size: 30px;
+    border-radius: 12px;
+    width: 120px;
+    height: 120px;
+}
+
+.mobile .container .items:nth-child(1)
+{
+    background: #fe6969;
+    box-shadow: 0 1px 5px#fe6969;
+}
+.mobile .container .items:nth-child(2)
+{
+    background: #7a54ff;
+    box-shadow: 0 1px 5px #7a54ff;
+}
+.mobile .container .items:nth-child(3)
+{
+    background: #ff8e60;
+    box-shadow: 0 1px 5px #ff8e60;
+}
+.mobile .container .items:nth-child(4)
+{
+    background: #2bc3fe;
+    box-shadow: 0 1px 5px #2bc3fe;
+}
+.mobile .container .items:nth-child(5)
+{
+    background: #5a65ff;
+    box-shadow: 0 1px 5px #5a65ff;
+}
+.mobile .container .items:nth-child(6)
+{
+    background: #96da45;
+    box-shadow: 0 1px 5px #96da45;
+}
+
+
+.mobile .container .items .icon
+{
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+    position: relative;
+    top: -25px;
+    left: 0;
+}
+
+.mobile .container .items .icon p
+{
+    font-size: 10px;
+    color: #fff;
+}
+
+.mobile .container .items .icon i.fas
+{
+    color: #fff;
+    background: #fdf1f159;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: 20px;
+    line-height: 40px;
+}
+
+.mobile .container .items .txt 
+{
+    font-size: 16px;
+    font-weight: 700;
+    text-align: left;
+    padding-left: 12px;
+    margin-top: -1rem;
+    color: #fff;
+}
+
+.mobile .container .items .status
+{
+    color: #fff;
+    font-size: 10px;
+    position: relative;
+    right: -20px;
+    bottom: -10px;
+}
+
+.mobile .footer
+{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.mobile .footer p i.fas
+{
+    display: block;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    font-size: 20px;
+}
+.mobile .footer .child
+{
+    opacity: 0.4;
+}
+.mobile .footer .child:nth-child(2)
+{
+    opacity: 1;
+}
+
+.mobile .footer .child small
+{
+    font-size: 10px;
+}
+
+hr
+{
+    background: #000;
+    width: 40%;
+    height: 5px;
+    border-radius: 5px;
+    margin-top: 0.5rem;
+}
+
+
+.credit
+{
+    position: absolute;
+    bottom: -40px;
+    left: 100px;
+}
